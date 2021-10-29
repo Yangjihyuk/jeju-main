@@ -24,6 +24,12 @@ img{
 .w-33{
     width: 33.33%;
 }
+.f-32{
+    font-size: 32px;
+}
+.f-24{
+    font-size: 24px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -63,7 +69,7 @@ header{
     padding-left: 80px;
 }
 .left-menu a{
-    font-size: 14px;
+    font-size: 16px;
 }
 .left-menu li+li{
     margin-left: 40px;
@@ -79,15 +85,41 @@ header{
 .right-menu{
     display: flex;
 }
+.log-in-btn{
+    padding: 4px 12px;
+    margin: 0 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #00aa91;
+    color: #fff;
+}
 .right-menu li{
     margin-top: 2px;
     padding: 0 12px;
+    position: relative;
 }
+.right-menu a{
+    font-size: 14px;
+}
+.right-menu li a::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    top: 0;
+    left: -0.8px;
+    background-color: #d9d9d9;
+    z-index: 99;
+}
+.txt-primary{
+    color: #00aa91;
+}
+
 .menu-btn{
     display: none;
 }
 /* header end */
-
+/* section01 */
 .slide .swiper-slide{
     width: 100%;
     height: 630px;
@@ -96,20 +128,27 @@ header{
     background-repeat: no-repeat;
 }
 .bg1{
-    background:url('../images/bg_visual_24.jpg')
+    background:url('../images/section01/bg_visual_24.jpg')
 }
 .bg2{
-    background:url('../images/bg_visual_22.jpg')
+    background:url('../images/section01/bg_visual_22.jpg')
 }
 .bg3{
-    background:url('../images/bg_visual_20.jpg')
+    background:url('../images/section01/bg_visual_20.jpg')
 }
 .mobile-slide{
     display: none;
 }
+.swiper-slide{
+    position: relative;
+}
+
 .notice-wrap{
     width: 100%;
     border-bottom: 1px solid #d9d9d9;
+}
+.shipping-wrap{
+    border-bottom: 1px solid #d9d9d9 ;
 }
 .conts-area{
     width: 960px;
@@ -119,7 +158,7 @@ header{
 .notice-area{
     height: 76px;
 }
-.notice-area h2,span{
+.notice-area h2,.notice-area span{
  font-size: 16px;
 }
 .notice-area span{
@@ -139,12 +178,106 @@ header{
     background-color: #00aa91;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 32px;
     border-radius: 3px;
     margin-top: 30px;
     cursor: pointer;
+    font-size: 15px;
+}
+/* section01 end */
+/* section02 */
+.section02{
+    width: 100%;
+    height: 720px;
+    background: url(../images/section02/bg_regular_03.png)
+    no-repeat;
+    background-position:center ;
+    border-bottom: 1px solid #d9d9d9 ;
+}
+.section02 b{
+    font-size: 32px;
+    font-weight: 700;
+}
+/* section02 end */
+/* section03 */
+.sec03-container{
+    justify-content: center;
+    text-align: left;
 }
 
+.sec03-box{
+    width: 460px;
+    height: 168px;
+    background-position: right;
+    background-size: cover;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-left: 32px;
+    margin: 0 20px;
+}
+.bg01{
+    background: url(../images/section03/bn_order.png) no-repeat 292px 100%;
+}
+.bg02{
+    background: url(../images/section03/bn_large_order.png) no-repeat 292px 100%;
+}
+.tit{
+    color: #111;
+    letter-spacing: -1px;
+}
+.desc{
+    margin-top: 20px;
+    color: #999;
+}
+/* section03 end */
+/* section04 */
+.section04{
+    height: 630px;
+    background: url(../images/section04/bg_down.jpg) no-repeat 50%;
+}
+.down{
+    justify-content: center;
+}
+.down-btn{
+    width: 182px;
+    height: 56px;
+    margin: 0 10px;
+}
+/* section04 end */
+footer{
+    background: #000;
+    font-size: 14px;
+}
+footer .conts-area{
+    padding:32px 20px 52px ;
+}
+.util{
+    margin-bottom: 20px;
+}
+footer li{
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+}
+footer li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 1px;
+    height: 12px;
+    background-color: rgba(255,255,255,.2);
+}
+footer h4{
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+footer p{
+    color: #666;
+}
 @media(max-width:960px){
     .conts-area{
         width: 100%;
@@ -187,6 +320,9 @@ header{
         color: #fff;
         font-weight: bold;
         font-size: 1.5rem;
+    }
+    .right-menu li a::after{
+        display: none;
     }
     .menu-btn{
         display: block;
@@ -247,6 +383,12 @@ header{
     }
     .shipping-wrap img{
         width:30%;
+        justify-content: center;
+    }
+
+    /* section03 */
+    .sec03-container{
+        flex-direction: column !important;
     }
 }
 @media(max-width:540px){
