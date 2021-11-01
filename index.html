@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제주용암수</title>
+    <!-- aos.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- xeicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
-
+    <!-- swiper -->
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -49,9 +51,16 @@
         <div class="slide pc-slide">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide bg1"></div>
-                  <div class="swiper-slide bg2"></div>
-                  <div class="swiper-slide bg3"></div>
+                  <div class="swiper-slide bg1">
+                      <button class="main-btn02">자세히 보기</button>
+                  </div>
+                  
+                  <div class="swiper-slide bg2">
+                    <button class="main-btn01">자세히 보기</button>
+                  </div>
+                  <div class="swiper-slide bg3">
+                    <button class="main-btn01">자세히 보기</button>
+                  </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -62,12 +71,11 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="assets/images/section01/m-main-img1.jpg" alt="">
-                <button class="main-btn">자세히 보기</button>
                 </div>
                   <div class="swiper-slide"><img src="assets/images/section01/m-main-img2.jpg" alt="">
-                <button class="main-btn">자세히 보기</button></div>
+                </div>
                   <div class="swiper-slide"><img src="assets/images/section01/m-main-img3.jpg" alt="">
-                <button class="main-btn">자세히 보기</button></div>
+                </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -83,7 +91,7 @@
     </section>
 
 
-    <section class="regular-wrap shipping-wrap">
+    <section class="regular-wrap shipping-wrap" data-aos="fade-down">
         <div class="conts-area text-center">
             <h1 class="f-32 normal">돈과 시간을 아껴주는, 정기배송</h1>
         </div>
@@ -124,16 +132,52 @@
         </div>
     </section>
 
-    <section class="section02 introduction">
-        <div class="conts-area text-center">
-            <h1 class="regular-wrap f-32 normal"><span class="b bold">경도</span>가 좋은 물의 기준, Dr.You 제주용암수</h1>
+    <section class="section02" data-aos="fade-down">
+        <div class="introduction conts-area text-center">
+            <h1 class="regular-wrap f-32 normal" data-aos="fade-down"><span class="b bold">경도</span>가 좋은 물의 기준, Dr.You 제주용암수</h1>
+        </div>
+
+        <div class="mobile-introduction ">
+            <div class="m-intro-box">
+                <div class="in-box" data-aos="fade-down">
+                    <img src="assets/images/section02/mobile-sec2-img01.jpg" alt="" class="img-80-80">
+
+                    <div class="in-box-txt">
+                        <h3><span class="txt-primary">알칼리워터</span><br>활성산소 저하효과</h3>
+                    </div>
+                </div>
+                <div class="in-box" data-aos="fade-down">
+                    <img src="assets/images/section02/mobile-sec2-img02.jpg" alt=""
+                    class="img-80-80">
+
+                    <div class="in-box-txt">
+                        <h3><span class="txt-primary">경도200</span><br>좋은물 선택의 기준</h3>
+                    </div>
+                </div>
+                <div class="in-box bold" data-aos="fade-down">
+                    <img src="assets/images/section02/mobile-sec2-img03.jpg" alt=""
+                    class="img-80-80">
+
+                    <div class="in-box-txt">
+                        <h3><span class="txt-primary">1등물맛</span><br><2021 먹는샘물품평회></2021> 최고점</h3>
+                    </div>
+                </div>
+                <div class="in-box bold" data-aos="fade-down">
+                    <img src="assets/images/section02/mobile-sec2-img04.jpg" alt=""
+                    class="img-80-80">
+
+                    <div class="in-box-txt">
+                        <h3><span class="txt-primary">40만년동안</span><br>현무암이 거른 깨끗함</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="section03 link-bn regular-wrap">
         <div class="conts-area">
-            <ul class="sec03-container row">
-                <li class="sec03-box bg01">
+            <ul class="sec03-container row" data-aos="fade-down">
+                <li class="sec03-box bg01" >
                     <a href="#">
                         <h2 class="tit f-24">오늘 밤 주문하면 내일 도착!</h2>
                         <p class="desc">오후 11시까지 결제만 하세요.<br>일부 도서산간지역은  예외</p>
@@ -149,12 +193,12 @@
         </div>
     </section>
 
-    <section class="section04 app-down">
+    <section class="section04 app-down"data-aos="fade-down">
         <div class="title regular-wrap">
-            <h2 class="tit text-center f-32 normal">Dr.You 제주용암수 어플로 더욱 편하게 이용하세요!</h2>
+            <h2 class="text-center f-32 normal" data-aos="fade-down">Dr.You 제주용암수 어플로 더욱 편하게 이용하세요!</h2>
         </div>
         <div class="app-down">
-            <ul class="down row">
+            <ul class="down row" data-aos="fade-down">
                 <li>
                     <a href="#">
                         <img src="assets/images/section04/btn_ios.png" alt="어플스토어" class="down-btn">
@@ -184,10 +228,11 @@
         </div>
     </footer>
 
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+
+
     <script>
         const navi=document.querySelector('.right-menu');
         const menuBtn=document.querySelector('.menu-btn');
@@ -206,6 +251,10 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
