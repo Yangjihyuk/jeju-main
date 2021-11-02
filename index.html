@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <header>
+    
+    <header id="header">
         <nav class="gnb">
             <div class="left-navi">
                 <div class="logo">
@@ -62,8 +62,8 @@
                     <button class="main-btn01">자세히 보기</button>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"><img src="assets/images/section01/btn_next.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="assets/images/section01/btn_prev.png" alt=""></div>
                 <div class="swiper-pagination"></div>
               </div>
         </div>
@@ -227,9 +227,14 @@
                 <p>COPYRIGHT(C) JEJUYONGAMSOO ALL RIGHTS RESERVED</p>
         </div>
     </footer>
+    
+    <span><a href="#" class="btn-top"></a></span>
 
+    <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
     
 
 
@@ -245,11 +250,14 @@
         pagination: {
           el: ".swiper-pagination",
           type: "fraction",
+        
         },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        loop:true,
+        autoplay:3000,
       });
     </script>
 
