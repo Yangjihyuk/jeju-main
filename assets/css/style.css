@@ -197,13 +197,20 @@ header{
     font-size: 16px;
     font-weight: 700;
 }
-
-.mobile-slide{
-    display: none;
-}
 .swiper-slide{
     position: relative;
 }
+.mobile-slide{
+    display: none;
+}
+.mobile-slide .swiper-button-next::after{
+    color: #fff;
+}
+
+.mobile-slide .swiper-button-prev::after{
+    color: #fff;
+}
+
 
 .notice-wrap{
     width: 100%;
